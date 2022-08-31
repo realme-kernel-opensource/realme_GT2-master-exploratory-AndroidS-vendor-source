@@ -1,0 +1,14 @@
+//ifdef OPLUS_FEATURE_CHG_BASIC
+
+#include "oplus-chg-21841.dtsi"
+
+&battery_charger {
+	qcom,hot_bat_decidegc = <500>;
+	oplus,pps_charge_strategy_temp = <0 50 120 200 350 440 490>;
+};
+
+&oplus_chg_comm{
+	oplus,batt-them-thr = <(-100) 0 50 120 160 400 440 500>;//tbat
+};
+
+//endif OPLUS_FEATURE_CHG_BASIC
